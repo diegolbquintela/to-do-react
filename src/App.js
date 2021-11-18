@@ -26,9 +26,12 @@ function App() {
     },
   ];
 
+  // bringing data from New Expense, that came from ExpenseForm
+  const addExpenseHandler = (expense) => {};
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expense item={expenses} />
     </div>
   );
