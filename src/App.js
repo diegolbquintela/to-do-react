@@ -27,7 +27,9 @@ function App() {
   ];
 
   // bringing data from New Expense, that came from ExpenseForm
-  const addExpenseHandler = (expense) => {};
+  const addExpenseHandler = (expense) => {
+    console.log(expense);
+  };
 
   return (
     <div>

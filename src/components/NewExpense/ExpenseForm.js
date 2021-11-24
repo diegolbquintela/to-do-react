@@ -31,9 +31,10 @@ const ExpenseForm = (props) => {
       date: new Date(enteredDate),
     };
 
+    console.log(expenseData);
     // sending user data to NewExpense
     props.onSaveExpenseData();
-    // clearing submission after storing the data
+    // clearing submission form after storing the data
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
